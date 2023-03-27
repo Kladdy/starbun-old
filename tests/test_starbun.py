@@ -1,10 +1,13 @@
 import unittest
-from starbun.test import super_tester
+from starbun.logger import logger
 
 class TestStarbun(unittest.TestCase):
 
 	def test_starbun(self):
-		super_tester()
-		self.assertEqual(1+1, 2)
+		logger.info("info")
+		logger.warn("warn")
+		logger.error("error")
+		logger.debug("debug")
+		logger.fatal("fatal")
 
 unittest.main()
