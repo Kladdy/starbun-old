@@ -1,9 +1,9 @@
 import unittest
 from starbun.logger import logger
 
-class TestStarbun(unittest.TestCase):
+class TestLogger(unittest.TestCase):
 
-	def test_starbun(self):
+	def test_logger(self):
 		experiment = "PROJECT"
 		trial = "T1"
 		run = "R1"
